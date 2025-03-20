@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FBE8ED; /*Very Light Pink */
+    color: black; 
+    text-align: center;
+}
+
+/*Input Bar*/
+.input-bar {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #EFD1D4; /*Light Pink*/
+    border: 1px solid #DBD9DA; /*Light Gray*/
+    border-radius: 5px;
+    text-align: center; 
+}
+
+.input-bar input { 
+    width: 50%;
+    padding: 20px;
+    margin-right: 10px;
+    border: 1px solid #DBD9DA; /*Light Gray*/
+    border-radius: 5px;
+    background-color: #FBE8ED /*Very Light Pink*/
+}
+
+.input-bar button {
+    padding: 10px 20px;
+    background-color: #93B0AC; /*Teal*/
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer; 
+}
+
+.input-bar button:hover {
+    background-color: #C5BD96; /*Light Olive Green*/
+}
