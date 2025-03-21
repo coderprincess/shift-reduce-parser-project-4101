@@ -9,13 +9,56 @@
     <body>
         <div class = "parser-container">
         <h1>Shift Reduce Parser</h1>
-        
+
         <!-- Input bar under the title -->
          <div class = "input-bar">
             <label for = "inputProblem"> Enter Your Problem: </label>
             <input type = "text" id = "inputProblem" placeholder = "Type your expression here!">
             <button id = "solveProblem"> Solve </button>
          </div>
+
+         <!-- Main Layout: Parse Table and Side Panels-->
+          <div class = "layout">
+
+            <!-- Parse Table Section -->
+             <div class = "parse-table">
+                <h2>Parse Table</h2>
+                <table id = "parseTable">
+                    <thead>
+                        <tr>
+                            <th rowspan = "2"> State </th>
+                            <th colspan = "6"> Action </th>
+                            <th colspan = "3"> GoTo </th>
+                        </tr>
+                        <tr>
+                            <th>id</th>
+                            <th>+</th>
+                            <th>*</th>
+                            <th>(</th>
+                            <th>)</th>
+                            <th>$</th>
+                            <th>E</th>
+                            <th>T</th>
+                            <th>F</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0</td>
+                            <td>S5</td>
+                            <td></td>
+                            <td></td>
+                            <td>S4</td>
+                            <td></td>
+                            <td></td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                    </tbody>
+                </table>
+             </div>
+          </div>
          </div>
     </body>
 </html>
