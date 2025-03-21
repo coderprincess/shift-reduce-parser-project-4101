@@ -29,10 +29,57 @@ body {
     background-color: #93B0AC; /*Teal*/
     color: white;
     border: none;
-    border-radius: 20px;
+    border-radius: 10px; /*Determines how round the button is */
     cursor: pointer; 
 }
 
 .input-bar button:hover {
     background-color: #C5BD96; /*Light Olive Green*/
+}
+
+/*Layout*/
+.layout{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Parse Table */
+.parse-table{
+    flex: 3;
+    padding: 20px; /*Spacing inside the container*/
+    background-color: #EFD1D4; /*Light Pink*/
+    border: 1px solid #DBD9DA; /*Light Gray*/
+    border-radius: 5px; /*Rounds the corners of the container*/
+    text-align: left;
+    overflow-x: auto; /*Enables horizontal scrolling if content overflows */
+}
+
+/*Styling for the table*/
+.parse-table table{
+    width: 100%;
+    border-collapse: collapse; /*Removes space between table borders*/
+    text-align: center;
+}
+
+/*Styling for table headers and cells*/
+.parse-table th, .parse-table td {
+    padding: 10px;
+    border: 1px solid #DBD9DA; /*Light Gray*/
+    background-color: #FBE8ED; /*Very Light Pink for cells */
+}
+
+/*Styling for table headers*/
+.parse-table th {
+    background-color: #93B0AC; /*Teal for header*/
+    color: white;
+}
+
+/*Spanning multiple rows*/
+.parse-table th[rowspan = "2"] {
+    vertical-align: middle; /*Center-align vertically for multi-row headers*/
+}
+
+.parse-table tbody tr:nth-child(even) {
+    background-color: #C3DCD8; /*Light Blue for alternate rows*/
 }
