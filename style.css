@@ -83,3 +83,34 @@ body {
 .parse-table tbody tr:nth-child(even) {
     background-color: #C3DCD8; /*Light Blue for alternate rows*/
 }
+
+/*Grammar Rules*/
+.side-panel {
+    flex: 1;
+    padding: 10px;
+    background-color: #EFD1D4;
+    border: 1px solid #DBD9DA;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.side-panel h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+
+}
+
+#grammarRules {
+    list-style: none;
+    padding: 0;
+    line-height: 1.8;
+}
+
+#grammarRules li{
+    font-weight: bold; /*Makes the grammar rules bold*/
+    color: #C5BD96; /*Blue text color for the grammar rules*/
+    padding: 5px 0;
+    /*background-color: #FBE8ED; /*Light pink background for contrast*/
+    border-bottom: 1px solid #DBD9DA; /*Light gray separator line */
+}
+
