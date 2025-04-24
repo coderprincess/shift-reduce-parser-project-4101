@@ -21,7 +21,13 @@ body {
     margin-right: 10px;
     border: 1px solid #DBD9DA; /*Light Gray*/
     border-radius: 5px;
-    background-color: #FBE8ED /*Very Light Pink*/
+    background-color: #FBE8ED; /*Very Light Pink*/
+}
+
+/*Added a focus state for the input box to enhance user interaction*/
+.input-bar input:focus{
+    border-color: #93B0AC; /*Teal border on focus*/
+    outline: none;
 }
 
 .input-bar button {
@@ -35,6 +41,7 @@ body {
 
 .input-bar button:hover {
     background-color: #C5BD96; /*Light Olive Green*/
+    transition: background-color 0.3s ease; /*Added a transition for smooth color change */
 }
 
 /*Layout*/
@@ -83,6 +90,10 @@ body {
 .parse-table tbody tr:nth-child(even) {
     background-color: #C3DCD8; /*Light Blue for alternate rows*/
 }
+/*Created a hover effect*/
+.parse-table tbody tr:hover{
+    background-color:  #EFD1D4; /*Light Pink on hover */
+}
 
 /*Grammar Rules*/
 .side-panel {
@@ -109,7 +120,8 @@ body {
 #grammarRules li{
     font-weight: bold; /*Makes the grammar rules bold*/
     color: #C5BD96; /*Blue text color for the grammar rules*/
-    padding: 5px 0;
+    font-size: 1.1rem; /*larger font*/
+    padding: 8px 0;
     /*background-color: #FBE8ED; /*Light pink background for contrast*/
     border-bottom: 1px solid #DBD9DA; /*Light gray separator line */
 }
